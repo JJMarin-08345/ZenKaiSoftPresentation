@@ -4,7 +4,7 @@ export const routesIndex: RouteObject[] = ([
     {
         path: "/",
         element: (
-            <div className="bg-red-500 h-screen">
+            <div className="h-[200vh]">
                 <p>HOLA COMO VAS</p>
             </div>
         )
