@@ -1,6 +1,5 @@
 import * as LucideIcons from "lucide-react";
 import { useServices } from "../hooks/useServices";
-import type React from "react";
 
 export const Services = () => {
     const {

@@ -1,4 +1,5 @@
 import { Services } from "../components/Services"
+import { WhyChooseUs } from "../components/WhyChooseUs"
 
 export const HomeLayout = () => {
     return (
@@ -46,7 +47,17 @@ export const HomeLayout = () => {
                     </div>
                 </div>
             </section>
-            <Services />
+
+            {/* Sección de servicios ofrecidos */}
+            <section className="py-20 bg-white">
+                <Services />
+            </section>
+
+            {/* Sección de por qué nosotros */}
+            <section className="py-20 bg-gray-100">
+                <WhyChooseUs />
+            </section>
+
         </div>
     )
 }

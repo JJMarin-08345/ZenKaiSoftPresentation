@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Anta';
+    src: url('/public/font/Anta-Regular.ttf') format('truetype');
+}
+
+@theme {
+    --font-anta: "Anta", sans-serif;
+}
