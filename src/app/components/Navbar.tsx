@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import ZenkaiLogo from "/src/assets/images/ZenkaiSoftLogo.png";
 import type { NavItemType } from "app/types/navbar.types";
@@ -23,28 +23,26 @@ export const Navbar = () => {
 
     const navItems: NavItemType[] = [
         { name: "Inicio", path: "/" },
-        {
-            name: "Quiénes Somos",
-            path: "/quienes-somos",
-            dropdown: [
-                { name: "Nuestra Historia", path: "/quienes-somos/historia" },
-                { name: "Misión y Visión", path: "/quienes-somos/mision-vision" },
-                { name: "Equipo", path: "/quienes-somos/equipo" },
-            ],
-        },
+        // {
+        //     name: "Quiénes Somos",
+        //     path: "/quienes-somos",
+        //     dropdown: [
+        //         { name: "Nuestra Historia", path: "/quienes-somos/historia" },
+        //         { name: "Misión y Visión", path: "/quienes-somos/mision-vision" },
+        //         { name: "Equipo", path: "/quienes-somos/equipo" },
+        //     ],
+        // },
         {
             name: "Servicios",
             path: "/servicios",
             dropdown: [
                 { name: "Desarrollo Web", path: "/servicios/desarrollo-web" },
                 { name: "Aplicaciones Móviles", path: "/servicios/apps-moviles" },
-                { name: "Consultoría IT", path: "/servicios/consultoria" },
-                { name: "Soporte Técnico", path: "/servicios/soporte" },
             ],
         },
         { name: "Proyectos", path: "/proyectos" },
         { name: "Blog", path: "/blog" },
-        { name: "Contacto", path: "/contacto" },
+        // { name: "Contacto", path: "/contacto" },
     ]
 
     return (
@@ -207,7 +205,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <Outlet />
+            {/* <Outlet /> */}
         </>
     )
 }

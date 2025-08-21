@@ -8,6 +8,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: '0.0.0.0', // Permite acceder desde la red
+    port: 5173,      // O el puerto que quieras
+  },
   resolve: {
     alias: {
       '@': '/src',

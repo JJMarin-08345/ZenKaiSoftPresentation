@@ -1,4 +1,4 @@
-import { Layers, Layers2, Lightbulb, LockKeyholeIcon, ShieldCheck } from "lucide-react";
+import { Layers, Lightbulb, LockKeyholeIcon, ShieldCheck } from "lucide-react";
 import { useWhyChooseUs } from "../hooks/useWhyChooseUs"
 
 export const WhyChooseUs = () => {
@@ -6,7 +6,7 @@ export const WhyChooseUs = () => {
     const {
         data_info: { reasons }
     } = useWhyChooseUs();
-
+ 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

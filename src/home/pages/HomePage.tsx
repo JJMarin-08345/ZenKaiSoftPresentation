@@ -1,7 +1,8 @@
-import { Services } from "../components/Services"
-import { WhyChooseUs } from "../components/WhyChooseUs"
+import { Services } from "../components/Services";
+import { WhyChooseUs } from "../components/WhyChooseUs";
 
-export const HomeLayout = () => {
+export const HomePage = () => {
+    console.log("HomePage rendered");
     return (
         <div>
             {/* Hero Section */}
