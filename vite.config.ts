@@ -15,8 +15,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src',
-      '@home': '/src/home',
       '@public': '/public',
+      '@home': '/src/home',
+      '@proyects': '/src/proyects',
     },
   },
 })

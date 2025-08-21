@@ -3,6 +3,7 @@
     "baseUrl": "./src",
     "paths": {
       "@/home/*": ["home/*"],
+      "@/proyects/*": ["proyects/*"]
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2022",
