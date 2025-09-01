@@ -2,7 +2,7 @@ import { Services } from "../components/Services";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 
 export const HomePage = () => {
-    console.log("HomePage rendered");
+
     return (
         <div>
             {/* Hero Section */}
