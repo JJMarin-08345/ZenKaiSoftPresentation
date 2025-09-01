@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import type { ProjectType } from '../types/project.types';
-import { CalendarIcon, CodeIcon, ExternalLinkIcon, UsersIcon, XIcon } from 'lucide-react';
+import { CalendarIcon, CodeIcon, ExternalLinkIcon, GithubIcon, UsersIcon, XIcon } from 'lucide-react';
 
 interface ModalProjectProps {
     selectedProject: ProjectType;
@@ -8,7 +8,7 @@ interface ModalProjectProps {
 }
 
 export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProps) => {
-    
+
     useEffect(() => {
         // 🔹 Bloquear scroll del body cuando el modal abre
         document.body.style.overflow = "hidden";
@@ -84,17 +84,19 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                             </div>
 
                             {/* Results */}
-                            <div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Resultados Obtenidos</h3>
-                                <ul className="space-y-2">
-                                    {selectedProject?.results?.map((result, index) => (
-                                        <li key={index} className="flex items-start space-x-3">
-                                            <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                            <span className="text-gray-600">{result}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                            {selectedProject?.results && selectedProject?.results.length > 0 && (
+                                <div>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Resultados Obtenidos</h3>
+                                    <ul className="space-y-2">
+                                        {selectedProject?.results?.map((result, index) => (
+                                            <li key={index} className="flex items-start space-x-3">
+                                                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                                <span className="text-gray-600">{result}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
                         </div>
 
                         {/* Sidebar */}
@@ -160,6 +162,17 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                                     >
                                         <ExternalLinkIcon className="w-5 h-5 shrink-0" />
                                         <span>Ver Demo</span>
+                                    </a>
+                                )}
+                                {selectedProject.githubUrl && (
+                                    <a
+                                        href={selectedProject.githubUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-center space-x-2 border-2 border-gray-300 hover:border-red-500 text-gray-700 hover:text-red-500 px-6 py-3 rounded-lg font-medium transition-colors duration-300 w-full"
+                                    >
+                                        <GithubIcon className="w-5 h-5" />
+                                        <span>Ver Código</span>
                                     </a>
                                 )}
                             </div>

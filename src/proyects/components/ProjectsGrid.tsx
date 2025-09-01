@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useProjectsGrid } from "../hooks/useProjectsGrid";
-import { EyeIcon, InfoIcon } from "lucide-react";
+import { EyeIcon, GithubIcon, InfoIcon } from "lucide-react";
 import type { ProjectType } from "../types/project.types";
 import { ModalProject } from "./ModalProject";
 
@@ -67,7 +67,7 @@ export const ProjectsGrid = () => {
                             {/* Category Badge */}
                             <div className="absolute top-4 left-4">
                                 <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                    {project.category === "web" ? "Web" : project.category === "mobile" ? "Móvil" : "Desktop"}
+                                    {project.category === "web" ? "Web" : project.category === "mobile" ? "Móvil" : "Aplicación de escritorio"}
                                 </span>
                             </div>
                         </div>
@@ -81,14 +81,14 @@ export const ProjectsGrid = () => {
 
                             {/* Technologies */}
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {project.technologies.slice(0, 3).map((tech, index) => (
+                                {project.technologies.slice(0, 5).map((tech, index) => (
                                     <span key={index} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">
                                         {tech}
                                     </span>
                                 ))}
-                                {project.technologies.length > 3 && (
+                                {project.technologies.length > 5 && (
                                     <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">
-                                        +{project.technologies.length - 3}
+                                        +{project.technologies.length - 5}
                                     </span>
                                 )}
                             </div>
@@ -102,6 +102,18 @@ export const ProjectsGrid = () => {
                                     <EyeIcon className="w-4 h-4" />
                                     <span>Ver Detalles</span>
                                 </button>
+                                <div className="flex space-x-2">
+                                    {project.githubUrl && (
+                                        <a
+                                            href={project.githubUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 text-gray-500 hover:text-red-500 transition-colors duration-300"
+                                        >
+                                            <GithubIcon className="w-4 h-4" />
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>
