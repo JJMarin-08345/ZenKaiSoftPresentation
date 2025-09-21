@@ -42,7 +42,7 @@ export const useProjectsGrid = () => {
             title: "Sistema de Control y Ventas para Comida Rápida",
             description: "Aplicación de escritorio pensada para gestionar pequeños puestos de comidas rápidas, contando con un sistema básico de inventario y registro de ventas. Todo esto acompañado de visuales fáciles de usar.",
             shortDescription: "Software de gestión para puestos pequeños de comidas rápidas",
-            image: "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+            image: "https://cdn-icons-png.flaticon.com/512/5222/5222189.png",
             technologies: ["Java 11", "JSwing", "JDBC", "MariaDB", "XAMPP"],
             category: "desktop",
             demoUrl: "https://youtu.be/1zRn5QkG4Ak",

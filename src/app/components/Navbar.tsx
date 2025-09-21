@@ -113,7 +113,7 @@ export const Navbar = () => {
                         <div className="hidden md:block">
                             <button
                                 onClick={() => setDarkMode(!darkMode)}
-                                className="flex cursor-pointer items-center gap-2 bg-red-500 active:bg-black hover:bg-red-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-md hover:shadow-lg"
+                                className="flex cursor-pointer items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-md hover:shadow-lg"
                             >
                                 {darkMode ? <Sun size={18} /> : <Moon size={18} />}
                                 {darkMode ? "Modo Claro" : "Modo Oscuro"}
