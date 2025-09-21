@@ -77,7 +77,7 @@ export const useProjectsGrid = () => {
             client: "Institución Educativa (Proyecto MisiónTIC-2022)",
             date: "2022",
             duration: "2 meses",
-            teamSize: 3,
+            teamSize: 1,
             features: [
                 "CRUD de equipos, componentes y software",
                 "Gestión de cuentadantes y asignación de equipos",

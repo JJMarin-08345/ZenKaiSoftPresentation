@@ -22,7 +22,7 @@ export const useServices = () => {
             {
                 title: "Buenas Prácticas de Código",
                 description: "Desarrollo con estándares de calidad, patrones de diseño y arquitectura limpia.",
-                iconName: "Code2", // icono de lucide-react
+                iconName: "Code2",
             },
             {
                 title: "Arquitectura Robusta",

@@ -5,6 +5,8 @@
     src: url('/font/Anta-Regular.ttf') format('truetype');
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --font-anta: "Anta", sans-serif;
 }
