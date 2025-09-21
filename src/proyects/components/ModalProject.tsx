@@ -22,7 +22,7 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
             onClick={onCloseModal}
         >
-            <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            <div className="bg-white dark:bg-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Modal Header */}
@@ -54,17 +54,17 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Main Content */}
                         <div className="lg:col-span-2">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">{selectedProject.title}</h2>
-                            <p className="text-gray-600 mb-6 leading-relaxed">{selectedProject.description}</p>
+                            <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-4">{selectedProject.title}</h2>
+                            <p className="text-gray-600 dark:text-slate-400 mb-6 leading-relaxed">{selectedProject.description}</p>
 
                             {/* Features */}
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Características Principales</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-200 mb-3">Características Principales</h3>
                                 <ul className="space-y-2">
                                     {selectedProject?.features?.map((feature, index) => (
                                         <li key={index} className="flex items-start space-x-3">
                                             <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                                            <span className="text-gray-600">{feature}</span>
+                                            <span className="text-gray-600 dark:text-slate-400">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -72,12 +72,12 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
 
                             {/* Challenges */}
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Desafíos Técnicos</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-200 mb-3">Desafíos Técnicos</h3>
                                 <ul className="space-y-2">
                                     {selectedProject?.challenges?.map((challenge, index) => (
                                         <li key={index} className="flex items-start space-x-3">
                                             <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
-                                            <span className="text-gray-600">{challenge}</span>
+                                            <span className="text-gray-600 dark:text-slate-400">{challenge}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -86,12 +86,12 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                             {/* Results */}
                             {selectedProject?.results && selectedProject?.results.length > 0 && (
                                 <div>
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Resultados Obtenidos</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 dark:text-slate-200 mb-3">Resultados Obtenidos</h3>
                                     <ul className="space-y-2">
                                         {selectedProject?.results?.map((result, index) => (
                                             <li key={index} className="flex items-start space-x-3">
                                                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                                <span className="text-gray-600">{result}</span>
+                                                <span className="text-gray-600 dark:text-slate-400">{result}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -102,48 +102,48 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                         {/* Sidebar */}
                         <div className="space-y-6">
                             {/* Project Info */}
-                            <div className="bg-gray-50 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-4">Información del Proyecto</h3>
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-200 mb-4">Información del Proyecto</h3>
                                 <div className="space-y-3">
                                     <div className="flex items-center space-x-3">
-                                        <CalendarIcon className="w-5 h-5 shrink-0 text-red-500" />
+                                        <CalendarIcon className="w-5 h-5 shrink-0 text-red-500 dark:text-red-400" />
                                         <div>
-                                            <div className="text-sm text-gray-500">Año</div>
-                                            <div className="font-medium">{selectedProject.date}</div>
+                                            <div className="font-medium text-sm text-gray-500 dark:text-red-400">Año</div>
+                                            <div className="dark:text-slate-500">{selectedProject.date}</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-3">
-                                        <UsersIcon className="w-5 h-5 shrink-0 text-red-500" />
+                                        <UsersIcon className="w-5 h-5 shrink-0 text-red-500 dark:text-red-400" />
                                         <div>
-                                            <div className="text-sm text-gray-500">Equipo</div>
-                                            <div className="font-medium">{selectedProject.teamSize} personas</div>
+                                            <div className="font-medium text-sm text-gray-500 dark:text-red-400">Equipo</div>
+                                            <div className="dark:text-slate-500">{selectedProject.teamSize} personas</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-3">
-                                        <CalendarIcon className="w-5 h-5 shrink-0 text-red-500" />
+                                        <CalendarIcon className="w-5 h-5 shrink-0 text-red-500 dark:text-red-400" />
                                         <div>
-                                            <div className="text-sm text-gray-500">Duración</div>
-                                            <div className="font-medium">{selectedProject.duration}</div>
+                                            <div className="font-medium text-sm text-gray-500 dark:text-red-400">Duración</div>
+                                            <div className="dark:text-slate-500">{selectedProject.duration}</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-3">
-                                        <CodeIcon className="w-5 h-5 shrink-0 text-red-500" />
+                                        <CodeIcon className="w-5 h-5 shrink-0 text-red-500 dark:text-red-400" />
                                         <div>
-                                            <div className="text-sm text-gray-500">Cliente</div>
-                                            <div className="font-medium">{selectedProject.client}</div>
+                                            <div className="font-medium text-sm text-gray-500 dark:text-red-400">Cliente</div>
+                                            <div className="dark:text-slate-500">{selectedProject.client}</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Technologies */}
-                            <div className="bg-gray-50 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-4">Tecnologías Utilizadas</h3>
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-200 mb-4">Tecnologías Utilizadas</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {selectedProject.technologies.map((tech, index) => (
                                         <span
                                             key={index}
-                                            className="bg-white text-gray-700 px-3 py-1 rounded-full text-sm font-medium shadow-sm"
+                                            className="bg-white dark:bg-gray-800 text-gray-700 dark:text-red-400 px-3 py-1 rounded-full text-sm font-medium shadow-sm"
                                         >
                                             {tech}
                                         </span>
@@ -158,7 +158,7 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                                         href={selectedProject.demoUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center space-x-2 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 w-full"
+                                        className="flex items-center justify-center space-x-2 bg-red-500 hover:bg-red-600 active:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 w-full"
                                     >
                                         <ExternalLinkIcon className="w-5 h-5 shrink-0" />
                                         <span>Ver Demo</span>
@@ -169,7 +169,7 @@ export const ModalProject = ({ selectedProject, onCloseModal }: ModalProjectProp
                                         href={selectedProject.githubUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center space-x-2 border-2 border-gray-300 hover:border-red-500 text-gray-700 hover:text-red-500 px-6 py-3 rounded-lg font-medium transition-colors duration-300 w-full"
+                                        className="flex items-center justify-center space-x-2 border-2 dark:bg-white border-gray-300 hover:bg-gray-200 active:bg-gray-200 px-6 py-3 rounded-lg font-medium transition-colors duration-300 w-full"
                                     >
                                         <GithubIcon className="w-5 h-5" />
                                         <span>Ver Código</span>

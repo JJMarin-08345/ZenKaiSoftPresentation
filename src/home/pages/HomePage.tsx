@@ -21,7 +21,7 @@ export const HomePage = () => {
                                 impulsan el crecimiento de tu negocio.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link to="/proyectos" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                                <Link to="/proyectos" className="border-2 border-white text-white hover:bg-white active:bg-white hover:text-gray-900 active:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                                     Ver Portafolio
                                 </Link>
                             </div>
@@ -48,12 +48,12 @@ export const HomePage = () => {
             </section>
 
             {/* Sección de servicios ofrecidos */}
-            <section className="py-20 bg-white">
+            <section className="py-20 bg-white dark:bg-gray-800">
                 <Services />
             </section>
 
             {/* Sección de por qué nosotros */}
-            <section className="py-20 bg-gray-100">
+            <section className="py-20 bg-gray-100 dark:bg-gradient-to-t dark:from-gray-800 dark:to-gray-900">
                 <WhyChooseUs />
             </section>
 

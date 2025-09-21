@@ -1,4 +1,4 @@
-import { Layers, Lightbulb, LockKeyholeIcon, ShieldCheck } from "lucide-react";
+import { Layers, Lightbulb, ShieldCheck, User } from "lucide-react";
 import { useWhyChooseUs } from "../hooks/useWhyChooseUs"
 
 export const WhyChooseUs = () => {
@@ -6,12 +6,12 @@ export const WhyChooseUs = () => {
     const {
         data_info: { reasons }
     } = useWhyChooseUs();
- 
+
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
                         ¿Por qué elegir&nbsp;
                         <span className="font-anta">ZENKAI SOFT</span>?
                     </h2>
@@ -22,8 +22,8 @@ export const WhyChooseUs = () => {
                                     <span className="text-white font-bold text-sm">{index + 1}</span>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{reason.title}</h3>
-                                    <p className="text-gray-600">{reason.description}</p>
+                                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200 mb-2">{reason.title}</h3>
+                                    <p className="text-gray-600 dark:text-slate-400">{reason.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -39,17 +39,17 @@ export const WhyChooseUs = () => {
                                 <p className="text-red-100 text-sm">Aplicaciones rápidas y optimizadas.</p>
                             </div>
                             <div className="text-center">
-                                <LockKeyholeIcon className="mx-auto" />
-                                <div className="font-bold">Seguridad Avanzada</div>
-                                <p className="text-red-100 text-sm">Protección total de datos.</p>
-                            </div>
-                            <div className="text-center">
                                 <Layers className="mx-auto" />
-                                <div className="font-bold">Escalabilidad</div>
-                                <p className="text-red-100 text-sm">Crecemos junto a tu negocio.</p>
+                                <div className="font-bold">Arquitectura Robusta</div>
+                                <p className="text-red-100 text-sm">Diseñada para escalabilidad y mantenibilidad.</p>
                             </div>
                             <div className="text-center">
-                                <Lightbulb className="mx-auto" /> 
+                                <User className="mx-auto" />
+                                <div className="font-bold">Experiencia de Usuario</div>
+                                <p className="text-red-100 text-sm">Interfaces intuitivas y fáciles de usar.</p>
+                            </div>
+                            <div className="text-center">
+                                <Lightbulb className="mx-auto" />
                                 <div className="font-bold">Innovación Constante</div>
                                 <p className="text-red-100 text-sm">Siempre con lo último en tecnología.</p>
                             </div>
