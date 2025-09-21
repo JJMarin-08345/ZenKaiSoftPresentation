@@ -20,14 +20,14 @@ export const useServices = () => {
                 iconName: "Settings",
             },
             {
-                title: "E-commerce",
-                description: "Tiendas online completas con pasarelas de pago y gestión de inventario.",
-                iconName: "ShoppingCart",
+                title: "Buenas Prácticas de Código",
+                description: "Desarrollo con estándares de calidad, patrones de diseño y arquitectura limpia.",
+                iconName: "Code2", // icono de lucide-react
             },
             {
-                title: "Consultoría IT",
-                description: "Asesoramiento estratégico para optimizar tu infraestructura tecnológica.",
-                iconName: "CircleQuestionMark",
+                title: "Arquitectura Robusta",
+                description: "Sistemas escalables y mantenibles diseñados para crecer con tu negocio.",
+                iconName: "Layers",
             },
             {
                 title: "Soporte Técnico",

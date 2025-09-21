@@ -41,7 +41,7 @@ export const Navbar = () => {
         //     ],
         // },
         { name: "Proyectos", path: "/proyectos" },
-        { name: "Quiénes somos", path: "/blog" },
+        { name: "Quiénes somos", path: "/quienes-somos" },
         // { name: "Contacto", path: "/contacto" },
     ]
 
