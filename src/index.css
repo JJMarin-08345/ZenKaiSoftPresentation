@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Anta';
-    src: url('/public/font/Anta-Regular.ttf') format('truetype');
+    src: url('/font/Anta-Regular.ttf') format('truetype');
 }
 
 @theme {

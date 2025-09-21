@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Services } from "../components/Services";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 
@@ -20,12 +21,9 @@ export const HomePage = () => {
                                 impulsan el crecimiento de tu negocio.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                                    Comenzar Proyecto
-                                </button>
-                                <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                                <Link to="/proyectos" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                                     Ver Portafolio
-                                </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative">

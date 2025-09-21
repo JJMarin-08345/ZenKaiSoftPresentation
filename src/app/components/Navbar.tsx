@@ -32,16 +32,16 @@ export const Navbar = () => {
         //         { name: "Equipo", path: "/quienes-somos/equipo" },
         //     ],
         // },
-        {
-            name: "Servicios",
-            path: "/servicios",
-            dropdown: [
-                { name: "Desarrollo Web", path: "/servicios/desarrollo-web" },
-                { name: "Aplicaciones Móviles", path: "/servicios/apps-moviles" },
-            ],
-        },
+        // {
+        //     name: "Servicios",
+        //     path: "/servicios",
+        //     dropdown: [
+        //         { name: "Desarrollo Web", path: "/servicios/desarrollo-web" },
+        //         { name: "Aplicaciones Móviles", path: "/servicios/apps-moviles" },
+        //     ],
+        // },
         { name: "Proyectos", path: "/proyectos" },
-        { name: "Blog", path: "/blog" },
+        { name: "Quiénes somos", path: "/blog" },
         // { name: "Contacto", path: "/contacto" },
     ]
 
