@@ -11,7 +11,7 @@ export const WhyChooseUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
                         ¿Por qué elegir&nbsp;
                         <span className="font-anta">ZENKAI SOFT</span>?
                     </h2>
@@ -22,8 +22,8 @@ export const WhyChooseUs = () => {
                                     <span className="text-white font-bold text-sm">{index + 1}</span>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{reason.title}</h3>
-                                    <p className="text-gray-600">{reason.description}</p>
+                                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200 mb-2">{reason.title}</h3>
+                                    <p className="text-gray-600 dark:text-slate-400">{reason.description}</p>
                                 </div>
                             </div>
                         ))}

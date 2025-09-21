@@ -41,7 +41,7 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className="bg-white/90 dark:bg-black/90 shadow-lg sticky top-0 z-50 transition-colors duration-300">
+            <nav className="bg-white/90 dark:bg-gray-950/90 backdrop-blur-xs shadow-lg sticky top-0 z-50 transition-colors duration-300">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
@@ -138,7 +138,7 @@ export const Navbar = () => {
                     className={`md:hidden bg-white transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
                         }`}
                 >
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 dark:bg-black/90 border-t">
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 dark:bg-gray-950/90 border-t">
                         {navItems.map((item) => (
                             <div key={item.name}>
                                 {item.dropdown ? (
