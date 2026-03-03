@@ -29,6 +29,15 @@ export const Navbar = () => {
         { name: "Quiénes somos", path: "/quienes-somos" },
     ];
 
+    const handleClickProyects = (navName: string) => {
+        if(navName === "Proyectos") {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'click_proyectos',
+            });
+        }
+    }
+
     useEffect(() => {
         if (darkMode) {
             localStorage.setItem("theme", "dark");
@@ -84,6 +93,7 @@ export const Navbar = () => {
                                                             <Link
                                                                 key={subItem.name}
                                                                 to={subItem.path}
+                                                                onClick={() => handleClickProyects(subItem.name)}
                                                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500 
                                                                 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-red-400 transition-colors duration-200"
                                                             >
