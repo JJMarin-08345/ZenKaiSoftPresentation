@@ -30,7 +30,9 @@ export const Navbar = () => {
     ];
 
     const handleClickProyects = (navName: string) => {
-        if(navName === "Proyectos") {
+        console.log(navName);
+        if (navName === "Proyectos") {
+            console.log("HOLAA");
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 event: 'click_proyectos',
@@ -93,7 +95,6 @@ export const Navbar = () => {
                                                             <Link
                                                                 key={subItem.name}
                                                                 to={subItem.path}
-                                                                onClick={() => handleClickProyects(subItem.name)}
                                                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500 
                                                                 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-red-400 transition-colors duration-200"
                                                             >
@@ -106,6 +107,7 @@ export const Navbar = () => {
                                         ) : (
                                             <Link
                                                 to={item.path}
+                                                onClick={() => handleClickProyects(item.name)}
                                                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${isActive(item.path)
                                                     ? "text-red-500 bg-red-50 dark:text-red-400 dark:bg-gray-800"
                                                     : "text-gray-700 hover:text-red-500 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800 dark:hover:text-red-400"
