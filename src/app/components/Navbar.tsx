@@ -32,7 +32,6 @@ export const Navbar = () => {
     const handleClickProyects = (navName: string) => {
         console.log(navName);
         if (navName === "Proyectos") {
-            console.log("HOLAA");
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 event: 'click_proyectos',
