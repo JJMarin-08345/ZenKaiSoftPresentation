@@ -1,4 +1,4 @@
-import { Code, Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap } from "lucide-react";
 
 export const AboutUsPage = () => {
 
@@ -6,14 +6,14 @@ export const AboutUsPage = () => {
         {
             company: "AlbaHolding SAS",
             role: "Desarrollador Full Stack",
-            period: "Oct 2024 - Presente",
+            period: "Oct 2025 - Presente",
             description: "Mantenimiento y desarrollo de funcionalidades para distintas aplicaciones corporativas, usando .NET/Nest.js como servidor y React para el cliente.",
             technologies: [".NET", "React", "Nest.js", "Typescript", "PHP", "PostgreSQL", "Docker", "Material UI", "Tailwind CSS", "Azure DevOps"]
         },
         {
             company: "Optimus Latinoamérica SAS",
             role: "Desarrollador Full Stack",
-            period: "Feb 2024 - Oct 2024",
+            period: "Feb 2025 - Oct 2025",
             description: "Desarrollo de nuevas funcionalidades y mantenimiento a una aplicación web para la industria alimentaria.",
             technologies: ["Python", "Django", "Django API REST", "AWS", "PostgreSQL", "Typescript", "Expo", "React Native", "Bootstrap", "Tailwind CSS", "UX/UI", "Git Flow", "Modular Monolithic Architecture"],
         },
@@ -75,18 +75,29 @@ export const AboutUsPage = () => {
                     <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
                         <div className="inline-block mb-6">
                             <span className="bg-red-500/10 border border-red-500/20 text-red-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Desarrollador Full Stack
+                                Software Development Studio
                             </span>
                         </div>
-                        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent">
-                            Juan José Marín
+
+                        <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent">
+                            ZENKAI SOFT
                         </h1>
-                        <div className="text-2xl text-red-400 font-semibold mb-6">ZENKAI SOFT</div>
+
+                        <div className="text-red-400 font-medium mb-2">
+                            Fundado y dirigido por Juan José Marín
+                        </div>
+
+                        <div className="text-sm text-gray-400 mb-6">
+                            Independent Software Development Studio
+                        </div>
+
                         <p className="text-lg text-gray-400 leading-relaxed mb-8">
-                            Apasionado por construir soluciones digitales que resuelven problemas reales,
-                            desde aplicaciones web hasta sistemas complejos, siempre con foco en calidad e impacto.
+                            ZenKai Soft es un estudio independiente de desarrollo de software donde diseño
+                            y construyo productos digitales modernos — desde aplicaciones web hasta
+                            arquitecturas backend escalables — con enfoque en rendimiento,
+                            mantenibilidad y crecimiento a largo plazo.
                         </p>
-                        <div className="flex flex-wrap justify-center gap-3">
+                        {/* <div className="flex flex-wrap justify-center gap-3">
                             <a
                                 href="https://github.com/JJMarin-08345"
                                 target="_blank"
@@ -105,7 +116,7 @@ export const AboutUsPage = () => {
                                 <Briefcase className="w-4 h-4" />
                                 <span>LinkedIn</span>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
@@ -132,24 +143,35 @@ export const AboutUsPage = () => {
             <section className="py-20 bg-white dark:bg-gray-950">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Sobre Mí</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                            Sobre ZenKai Soft
+                        </h2>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <div className="space-y-6 text-gray-600 dark:text-slate-300 leading-relaxed text-lg">
                                 <p>
-                                    Convierto ideas en productos digitales que funcionan: rápidos, escalables y fáciles de mantener.
+                                    ZenKai Soft es un espacio donde desarrollo y experimento con soluciones de software
+                                    modernas, enfocadas en crear productos digitales rápidos, escalables y fáciles de mantener.
                                 </p>
+
                                 <p>
-                                    Me especializo en entender el problema antes de escribir una sola línea de código.
-                                    Eso significa menos retrabajo, entregas más predecibles y software que realmente
-                                    resuelve lo que necesita resolver.
+                                    Este proyecto funciona como mi laboratorio profesional y portafolio personal,
+                                    donde aplico las mejores prácticas de arquitectura, diseño de software y desarrollo
+                                    full stack para construir aplicaciones reales.
                                 </p>
+
                                 <p>
-                                    He colaborado en sistemas de gestión, plataformas web modernas y arquitecturas
-                                    cloud — siempre con foco en que el producto sea sostenible a largo plazo, no solo
-                                    que funcione hoy.
+                                    Como desarrollador full stack, me enfoco en entender el problema antes de escribir
+                                    una sola línea de código. Esto permite crear soluciones más estables, mantenibles
+                                    y preparadas para crecer junto al negocio.
+                                </p>
+
+                                <p>
+                                    A lo largo de mi experiencia he trabajado en plataformas web, sistemas empresariales
+                                    y arquitecturas cloud, colaborando en equipos de desarrollo y construyendo software
+                                    pensado para funcionar no solo hoy, sino también a largo plazo.
                                 </p>
                             </div>
                         </div>
@@ -186,7 +208,7 @@ export const AboutUsPage = () => {
                             Experiencia Profesional
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-slate-300 max-w-3xl mx-auto">
-                            Proyectos y empresas donde he colaborado
+                            Experiencia profesional y proyectos desarrollados
                         </p>
                     </div>
 
