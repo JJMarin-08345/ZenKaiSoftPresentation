@@ -12,7 +12,7 @@ export const useProjectsGrid = () => {
             image: "https://media.licdn.com/dms/image/v2/D4E03AQEqkQ-dx3dz5w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1712784625560?e=2147483647&v=beta&t=ejWBzDBiwFQwnWo_zEw2v4K30wWmTtEUTiA18jDxRgA",
             technologies: ["React", "Tailwind", "Node.js", "MongoDB", "AWS", "Twilio", "ePayco"],
             category: "web",
-            // demoUrl: "",
+            demoUrl: "https://app.salutio.mozartia.com/dashboard",
             date: "2024",
             client: "La Red Colombiana de Prestación y Cuidados en Salud S.A.S.",
             duration: "6 meses",
