@@ -11,6 +11,9 @@
       "@/about_us/*": [
         "about_us/*"
       ],
+      "@/tu_vehiculo_check/*": [
+        "tu_vehiculo_check/*"
+      ],
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2022",
