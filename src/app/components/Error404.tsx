@@ -108,7 +108,7 @@ export const Error404 = () => {
                     {/* Mensaje motivacional */}
                     <div className="mt-12">
                         <p className="text-gray-500 italic">
-                            "En ZENKAI SOFT, convertimos los errores en oportunidades de mejora."
+                            "En ZENKAISOFT, convertimos los errores en oportunidades de mejora."
                         </p>
                     </div>
                 </div>

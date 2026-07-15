@@ -80,7 +80,7 @@ export const AboutUsPage = () => {
                         </div>
 
                         <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent">
-                            ZENKAI SOFT
+                            ZENKAISOFT
                         </h1>
 
                         <div className="text-red-400 font-medium mb-2">
@@ -92,7 +92,7 @@ export const AboutUsPage = () => {
                         </div>
 
                         <p className="text-lg text-gray-400 leading-relaxed mb-8">
-                            ZenKai Soft es un estudio independiente de desarrollo de software donde diseño
+                            ZENKAISOFT es un estudio independiente de desarrollo de software donde diseño
                             y construyo productos digitales modernos — desde aplicaciones web hasta
                             arquitecturas backend escalables — con enfoque en rendimiento,
                             mantenibilidad y crecimiento a largo plazo.
@@ -144,7 +144,7 @@ export const AboutUsPage = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                            Sobre ZenKai Soft
+                            Sobre ZENKAISOFT
                         </h2>
                     </div>
 
@@ -152,7 +152,7 @@ export const AboutUsPage = () => {
                         <div>
                             <div className="space-y-6 text-gray-600 dark:text-slate-300 leading-relaxed text-lg">
                                 <p>
-                                    ZenKai Soft es un espacio donde desarrollo y experimento con soluciones de software
+                                    ZENKAISOFT es un espacio donde desarrollo y experimento con soluciones de software
                                     modernas, enfocadas en crear productos digitales rápidos, escalables y fáciles de mantener.
                                 </p>
 

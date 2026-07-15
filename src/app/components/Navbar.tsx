@@ -57,7 +57,7 @@ export const Navbar = () => {
                         {/* Logo */}
                         <div className="flex-shrink-0 flex items-center">
                             <Link to="/" className="flex items-center">
-                                <img src={ZenkaiLogo} alt="Zenkai Soft" className="h-10 bg-white rounded-md px-2 w-auto" />
+                                <img src={ZenkaiLogo} alt="ZENKAISOFT" className="h-10 bg-white rounded-md px-2 w-auto" />
                             </Link>
                         </div>
 

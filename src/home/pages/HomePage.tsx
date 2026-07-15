@@ -17,7 +17,7 @@ export const HomePage = () => {
                                 <span className="text-red-500"> soluciones digitales</span>
                             </h1>
                             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                                Somos ZENKAI SOFT, expertos en desarrollo de software personalizado, aplicaciones web y móviles que
+                                Somos ZENKAISOFT, expertos en desarrollo de software personalizado, aplicaciones web y móviles que
                                 impulsan el crecimiento de tu negocio.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">

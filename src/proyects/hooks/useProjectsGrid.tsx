@@ -134,6 +134,39 @@ export const useProjectsGrid = () => {
                 "UI/UX clara e intuitiva que facilita la adopción por parte de usuarios no técnicos",
                 "Arquitectura escalable lista para nuevas funcionalidades",
             ],
+        },
+        {
+            id: 7,
+            title: "Menux - Plataforma de menús digitales",
+            description:
+                "Menux es una plataforma SaaS para restaurantes que reemplaza la carta física por un menú digital accesible vía QR, junto con un panel administrativo completo para gestionarlo. Soporta múltiples sedes por restaurante (cada una con su propio horario, contacto y ubicación), categorías y productos con variantes de precio e ingredientes, promociones, y un editor visual de tema (Theme Studio) estilo Shopify para personalizar colores, tipografías y secciones del menú público sin tocar código, todo respaldado por planes con límites configurables (sedes, productos, etc.).",
+            shortDescription: "SaaS de menús digitales con QR y panel administrativo multi-sede",
+            image: "https://ooqpnjiuywgwrdcokubm.supabase.co/storage/v1/object/public/menux_products/menux.png",
+            technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS v4", "Supabase", "TanStack Query", "React Router v7"],
+            category: "web",
+            demoUrl: "https://menux-platform.zenkaisoft-col.com/",
+            date: "2026",
+            client: "Zenkaisoft",
+            duration: "En desarrollo activo",
+            teamSize: 1,
+            features: [
+                "Menú público digital accesible por QR, con URL propia por restaurante (slug)",
+                "Panel administrativo con gestión de categorías, productos, variantes de precio e ingredientes",
+                "Soporte multi-sede: cada sede con su propio horario, contacto, dirección y ubicación en el mapa",
+                "Gestión de promociones y horarios de atención",
+                "Theme Studio: editor visual estilo Shopify para personalizar el menú público (colores, tipografías, secciones) con vista previa en vivo",
+                "Planes con límites configurables (número de sedes, productos, etc.)",
+                "Autenticación y onboarding simplificado con Google",
+            ],
+            challenges: [
+                "Modelar correctamente los datos multi-sede sin duplicar información propia de la marca",
+                "Editor de tema en vivo (theme draft) que refleja cambios al instante sin persistirlos hasta guardar",
+                "Mantener un único componente de renderizado del menú público (LandingPreview) reutilizable entre el admin y el sitio público",
+            ],
+            results: [
+                "Plataforma funcional en producción, con restaurantes reales usando el panel administrativo",
+                "Arquitectura separada entre panel admin y sitio público, cada uno desplegado de forma independiente",
+            ],
         }
         // {
         //     id: 6,
