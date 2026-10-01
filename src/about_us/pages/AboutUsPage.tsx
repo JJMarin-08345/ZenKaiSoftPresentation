@@ -35,6 +35,11 @@ export const AboutUsPage = () => {
 
     const education = [
         {
+            institution: "Corporación Universitaria Minuto de Dios (UNIMINUTO)",
+            degree: "Ingeniería de Software",
+            period: "2026 - En curso",
+        },
+        {
             institution: "Fundación Universitaria Católica Lúmen Gentium",
             degree: "Tecnólogo en Desarrollo de Software",
             period: "2022 - 2025",
@@ -80,7 +85,7 @@ export const AboutUsPage = () => {
                         </div>
 
                         <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent">
-                            ZENKAISOFT
+                            Zenkaisoft: desarrollo de software con visión de producto
                         </h1>
 
                         <div className="text-red-400 font-medium mb-2">

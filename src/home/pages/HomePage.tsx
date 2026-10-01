@@ -11,18 +11,26 @@ export const HomePage = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
+                            <p className="mb-4 text-sm font-bold uppercase text-red-400">
+                                Desarrollo de software en Colombia
+                            </p>
                             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                                Transformamos tus
-                                <span className="text-red-500"> ideas</span> en
-                                <span className="text-red-500"> soluciones digitales</span>
+                                Desarrollo de software a medida para
+                                <span className="text-red-500"> impulsar tu empresa</span>
                             </h1>
                             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                                Somos ZENKAISOFT, expertos en desarrollo de software personalizado, aplicaciones web y móviles que
-                                impulsan el crecimiento de tu negocio.
+                                En Zenkaisoft diseñamos aplicaciones web, móviles y sistemas personalizados que digitalizan procesos,
+                                conectan información y están preparados para crecer con tu negocio.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
+                                <a
+                                    href="mailto:zenkaisoft.col@gmail.com?subject=Quiero cotizar un proyecto de software"
+                                    className="bg-red-500 text-center text-white hover:bg-red-600 px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300"
+                                >
+                                    Cuéntanos tu proyecto
+                                </a>
                                 <Link to="/proyectos" className="border-2 border-white text-white hover:bg-white active:bg-white hover:text-gray-900 active:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
-                                    Ver Portafolio
+                                    Ver proyectos
                                 </Link>
                             </div>
                         </div>
@@ -47,8 +55,16 @@ export const HomePage = () => {
                 </div>
             </section>
 
+            <section className="border-b border-gray-200 bg-gray-50 py-12 dark:border-gray-800 dark:bg-gray-900">
+                <div className="mx-auto grid max-w-7xl gap-8 px-4 text-center sm:grid-cols-3 sm:px-6 lg:px-8">
+                    <div><strong className="block text-2xl text-red-500">Web</strong><span className="text-gray-600 dark:text-gray-400">Plataformas y productos SaaS</span></div>
+                    <div><strong className="block text-2xl text-red-500">Móvil</strong><span className="text-gray-600 dark:text-gray-400">Aplicaciones Android y iOS</span></div>
+                    <div><strong className="block text-2xl text-red-500">Cloud</strong><span className="text-gray-600 dark:text-gray-400">APIs, datos e integraciones</span></div>
+                </div>
+            </section>
+
             {/* Sección de servicios ofrecidos */}
-            <section className="py-20 bg-white dark:bg-gray-800">
+            <section className="py-20 bg-white dark:bg-gray-900">
                 <Services />
             </section>
 

@@ -7,7 +7,7 @@ import type { NavItemType } from "app/types/navbar.types";
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-    const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark");
+    const [darkMode, setDarkMode] = useState(false);
 
     const location = useLocation();
 
@@ -25,6 +25,15 @@ export const Navbar = () => {
 
     const navItems: NavItemType[] = [
         { name: "Inicio", path: "/" },
+        {
+            name: "Servicios",
+            path: "/desarrollo-software-a-medida-colombia",
+            dropdown: [
+                { name: "Software a medida", path: "/desarrollo-software-a-medida-colombia" },
+                { name: "Aplicaciones web", path: "/desarrollo-aplicaciones-web" },
+                { name: "Aplicaciones móviles", path: "/desarrollo-aplicaciones-moviles" },
+            ],
+        },
         { name: "Proyectos", path: "/proyectos" },
         { name: "Quiénes somos", path: "/quienes-somos" },
     ];
@@ -40,14 +49,19 @@ export const Navbar = () => {
     }
 
     useEffect(() => {
-        if (darkMode) {
-            localStorage.setItem("theme", "dark");
-            document.documentElement.classList.add("dark");
-        } else {
-            localStorage.setItem("theme", "light");
-            document.documentElement.classList.remove("dark");
-        }
-    }, [darkMode]);
+        const savedDarkMode = localStorage.getItem("theme") === "dark";
+        setDarkMode(savedDarkMode);
+        document.documentElement.classList.toggle("dark", savedDarkMode);
+    }, []);
+
+    const toggleDarkMode = () => {
+        setDarkMode((current) => {
+            const next = !current;
+            localStorage.setItem("theme", next ? "dark" : "light");
+            document.documentElement.classList.toggle("dark", next);
+            return next;
+        });
+    };
 
     return (
         <>
@@ -123,7 +137,7 @@ export const Navbar = () => {
                         {/* Cambiar modo (claro - oscuro) */}
                         <div className="hidden md:block">
                             <button
-                                onClick={() => setDarkMode(!darkMode)}
+                                onClick={toggleDarkMode}
                                 className="flex cursor-pointer items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-md hover:shadow-lg"
                             >
                                 {darkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -206,7 +220,7 @@ export const Navbar = () => {
                         {/* Mobile Cambiar Modo (claro - oscuro) Button */}
                         <div className="pt-4 pb-2">
                             <button
-                                onClick={() => setDarkMode(!darkMode)}
+                                onClick={toggleDarkMode}
                                 className="flex w-full justify-center gap-2 bg-red-500 active:bg-red-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-md active:shadow-lg"
                             >
                                 {darkMode ? <Sun size={18} /> : <Moon size={18} />}

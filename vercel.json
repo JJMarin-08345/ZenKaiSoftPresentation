@@ -1,8 +1,32 @@
 {
     "rewrites": [
         {
+            "source": "/desarrollo-software-a-medida-colombia",
+            "destination": "/desarrollo-software-a-medida-colombia/index.html"
+        },
+        {
+            "source": "/desarrollo-aplicaciones-web",
+            "destination": "/desarrollo-aplicaciones-web/index.html"
+        },
+        {
+            "source": "/desarrollo-aplicaciones-moviles",
+            "destination": "/desarrollo-aplicaciones-moviles/index.html"
+        },
+        {
+            "source": "/proyectos",
+            "destination": "/proyectos/index.html"
+        },
+        {
+            "source": "/quienes-somos",
+            "destination": "/quienes-somos/index.html"
+        },
+        {
+            "source": "/tu_vehiculo_check/politica-privacidad",
+            "destination": "/tu_vehiculo_check/politica-privacidad/index.html"
+        },
+        {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/index.html"
         }
     ]
 }

@@ -4,6 +4,24 @@ import { useState, useEffect, useMemo } from "react"
 import { useNavigate } from "react-router-dom"
 import { Home, ArrowLeft } from "lucide-react"
 
+const frases404 = [
+    "Parece que esta página decidió irse a otra dimensión digital.",
+    "Te perdiste en el mapa de internet, pero tranquilo: siempre hay un camino de regreso.",
+    "Esta página se perdió en la órbita. Vuelve a la base antes de quedarte sin oxígeno.",
+    "Buscamos por todos lados, pero aquí no hay nada que mostrar.",
+    "Ups, parece que esta ruta no fue compilada correctamente.",
+    "Archivo no encontrado… quizá nunca fue guardado en el disco duro del universo.",
+    "Esta página está explorando el ciberespacio… y aún no regresa.",
+    "Contenido inaccesible… como un nivel secreto bloqueado en tu videojuego favorito.",
+    "Cargamos, cargamos… pero la página nunca apareció.",
+    "404: La página que buscas decidió tomarse un descanso.",
+    "El bot encargado de esta página se quedó dormido. Disculpa el inconveniente.",
+    "Parece que a este puzzle de internet le falta una pieza.",
+    "La página que buscas está más allá de la galaxia de este sitio web.",
+    "Un hechizo la hizo desaparecer. “Expelliarmus página”.",
+    "Error detectado: esta página fue devorada por un bug."
+];
+
 export const Error404 = () => {
     const navigate = useNavigate()
     const [isAnimating, setIsAnimating] = useState(false)
@@ -26,24 +44,6 @@ export const Error404 = () => {
         window.history.back()
     }
 
-    const frases404 = useMemo(() => [
-        "Parece que esta página decidió irse a otra dimensión digital.",
-        "Te perdiste en el mapa de internet, pero tranquilo: siempre hay un camino de regreso.",
-        "Esta página se perdió en la órbita. Vuelve a la base antes de quedarte sin oxígeno.",
-        "Buscamos por todos lados, pero aquí no hay nada que mostrar.",
-        "Ups, parece que esta ruta no fue compilada correctamente.",
-        "Archivo no encontrado… quizá nunca fue guardado en el disco duro del universo.",
-        "Esta página está explorando el ciberespacio… y aún no regresa.",
-        "Contenido inaccesible… como un nivel secreto bloqueado en tu videojuego favorito.",
-        "Cargamos, cargamos… pero la página nunca apareció.",
-        "404: La página que buscas decidió tomarse un descanso.",
-        "El bot encargado de esta página se quedó dormido. Disculpa el inconveniente.",
-        "Parece que a este puzzle de internet le falta una pieza.",
-        "La página que buscas está más allá de la galaxia de este sitio web.",
-        "Un hechizo la hizo desaparecer. “Expelliarmus página”.",
-        "Error detectado: esta página fue devorada por un bug."
-    ], []);
-    
     const fraseAleatoria = useMemo(() => frases404[Math.floor(Math.random() * frases404.length)], []);
 
     return (

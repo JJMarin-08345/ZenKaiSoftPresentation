@@ -1,27 +1,19 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import './index.css';
 import { RouterProvider } from 'react-router-dom';
 import { routes } from './app/routes/router';
-import { useEffect } from 'react';
+import { ThemeInitializer } from './app/components/ThemeInitializer';
 
-const MainApp = () => {
-  useEffect(() => {
-    // leer preferencia guardada
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
+const root = document.getElementById('root')!;
+const app = (
+  <>
+    <ThemeInitializer />
+    <RouterProvider router={routes} />
+  </>
+);
 
-  return (
-    <>
-      <RouterProvider router={routes} />
-    </>
-  );
+if (root.innerHTML.trim()) {
+  hydrateRoot(root, app);
+} else {
+  createRoot(root).render(app);
 }
-
-createRoot(document.getElementById('root')!).render(
-  <MainApp />
-)
